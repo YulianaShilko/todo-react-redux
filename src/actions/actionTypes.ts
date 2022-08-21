@@ -1,0 +1,9 @@
+enum ActionTypes {
+    ADD_TODO_SUCCESS,
+    TOGGLE_TODO_STATUS_SUCCESS,
+    REMOVE_TODO_SUCCESS,
+    REMOVE_ALL_TODO_SUCCESS,
+    REMOVE_COMPLETED_TODO_SUCCESS,
+}
+
+export default ActionTypes
