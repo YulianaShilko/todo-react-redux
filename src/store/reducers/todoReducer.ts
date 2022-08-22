@@ -1,8 +1,8 @@
 import { v1 as uuidV1 } from 'uuid'
 
+import { TodoActionTypes } from '../../interfaces/actionTypesInterfaces'
+import ITodo from '../../interfaces/ITodo'
 import ActionTypes from '../actions/actionTypes'
-import { TodoActionTypes } from '../interfaces/actionTypesInterfaces'
-import ITodo from '../interfaces/ITodo'
 
 interface ITodoReducerInterface {
     todos: ITodo[]

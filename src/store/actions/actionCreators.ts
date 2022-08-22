@@ -1,5 +1,5 @@
-import { TodoActionTypes } from '../interfaces/actionTypesInterfaces'
-import ITodo from '../interfaces/ITodo'
+import { TodoActionTypes } from '../../interfaces/actionTypesInterfaces'
+import ITodo from '../../interfaces/ITodo'
 import ActionTypes from './actionTypes'
 
 export const addTodo = (todo: ITodo): TodoActionTypes => {

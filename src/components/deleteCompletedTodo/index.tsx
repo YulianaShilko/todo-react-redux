@@ -2,7 +2,7 @@ import './style.scss'
 
 import { useDispatch } from 'react-redux'
 
-import { removeCompletedTodos } from '../../actions/actionCreators'
+import { removeCompletedTodos } from '../../store/actions/actionCreators'
 import Button from '../button'
 
 const DeleteCompletedTodos = () => {

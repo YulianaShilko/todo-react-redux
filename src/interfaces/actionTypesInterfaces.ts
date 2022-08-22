@@ -1,4 +1,4 @@
-import ActionTypes from '../actions/actionTypes'
+import ActionTypes from '../store/actions/actionTypes'
 import ITodo from './ITodo'
 
 interface IAddTodoAction {

@@ -3,9 +3,9 @@ import './style.scss'
 import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 
-import { addTodo } from '../../actions/actionCreators'
 import Button from '../../components/button'
 import Input from '../../components/input'
+import { addTodo } from '../../store/actions/actionCreators'
 
 const AddTodo = () => {
     const [userInput, setUserInput] = useState('')

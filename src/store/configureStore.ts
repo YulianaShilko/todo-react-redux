@@ -9,7 +9,7 @@ import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2'
 import storage from 'redux-persist/lib/storage'
 import thunk from 'redux-thunk'
 
-import rootReducer from '../reducers'
+import rootReducer from './reducers'
 
 const reduxPersistConfig: PersistConfig<any> = {
     key: 'todo',

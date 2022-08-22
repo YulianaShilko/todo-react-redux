@@ -1,10 +1,13 @@
 import { useDispatch, useSelector } from 'react-redux'
 
-import { removeTodo, toggleTodoStatus } from '../../actions/actionCreators'
 import Header from '../../components/header'
 import TodoList from '../../components/todoList'
 import ITodo from '../../interfaces/ITodo'
-import { RootState } from '../../reducers'
+import {
+    removeTodo,
+    toggleTodoStatus,
+} from '../../store/actions/actionCreators'
+import { RootState } from '../../store/reducers'
 import AddTodo from '../addTodo'
 import DeleteTodo from '../deleteTodo'
 
