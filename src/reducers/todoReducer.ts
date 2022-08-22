@@ -16,22 +16,24 @@ export const initialState: ITodoReducerInterface = {
 const todoReducer = (state = initialState, action: TodoActionTypes) => {
     switch (action?.type) {
         case ActionTypes.ADD_TODO_SUCCESS:
-            return Object.assign({}, state, {
+            return {
+                ...state,
                 todos: state.todos.concat({
                     ...action.payload,
                     ...{
                         id: action.payload.id ?? uuidV1(),
                     },
                 }),
-            })
+            }
         case ActionTypes.TOGGLE_TODO_STATUS_SUCCESS:
-            return Object.assign({}, state, {
+            return {
+                ...state,
                 todos: state.todos.map((todo: ITodo) =>
                     todo.id === action.payload.id
                         ? { ...todo, completed: !todo.completed }
                         : todo
                 ),
-            })
+            }
         case ActionTypes.REMOVE_TODO_SUCCESS:
             return {
                 todos: state.todos.filter(
@@ -39,9 +41,7 @@ const todoReducer = (state = initialState, action: TodoActionTypes) => {
                 ),
             }
         case ActionTypes.REMOVE_ALL_TODO_SUCCESS:
-            return Object.assign({}, state, {
-                todos: [],
-            })
+            return { ...state, todos: [] }
         case ActionTypes.REMOVE_COMPLETED_TODO_SUCCESS:
             return {
                 todos: state.todos.filter(
